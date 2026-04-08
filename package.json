@@ -1,0 +1,28 @@
+{
+  "name": "discord-meme-bot",
+  "version": "1.0.0",
+  "description": "Discord meme bot with slash commands, cooldowns, and embeds",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy-commands": "node src/deploy-commands.js",
+    "check": "node --check src/index.js && node --check src/deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "keywords": [
+    "discord",
+    "discordjs",
+    "meme",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.20.0",
+    "dotenv": "^16.6.1"
+  }
+}
